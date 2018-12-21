@@ -8,10 +8,8 @@ module.exports = function getPathOption(options) {
   let outputPath = 'components';
   if (options.path) {
     outputPath = options.path;
-  } else {
-    if (options.path === '') {
-      outputPath = '';
-    }
+  } else if (options.path === '') {
+    outputPath = '';
   }
   return outputPath;
 };
