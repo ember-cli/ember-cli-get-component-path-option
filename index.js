@@ -5,9 +5,9 @@ module.exports = function getPathOption(options) {
     throw new TypeError('getPathOptions first argument must be an object');
   }
 
-  let outputPath = 'components';
   if (options.path || options.path === '') {
-    outputPath = options.path;
+    return options.path;
   }
-  return outputPath;
+
+  return 'components';
 };
