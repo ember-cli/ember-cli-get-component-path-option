@@ -1,16 +1,13 @@
 'use strict';
 
 module.exports = function getPathOption(options) {
-  let outputPath = 'components';
   if (options === null || typeof options !== 'object') {
     throw new TypeError('getPathOptions first argument must be an object');
   }
-  if (options.path) {
-    outputPath = options.path;
-  } else {
-    if (options.path === '') {
-      outputPath = '';
-    }
+
+  if (options.path || options.path === '') {
+    return options.path;
   }
-  return outputPath;
+
+  return 'components';
 };
