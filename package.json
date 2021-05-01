@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/ember-cli/ember-cli-get-component-path-option#readme",
   "devDependencies": {
-    "chai": "^4.3.0",
+    "chai": "^4.3.4",
     "mocha": "^6.2.2"
   },
   "engines": {
